@@ -1,0 +1,18 @@
+.main_wrapper {
+    padding-left: 18rem;
+    min-height: 100vh;
+    
+}
+
+.dashboard_header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    /* box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.45); */
+}
+
+@media(max-width: 768px) {
+    .main_wrapper {
+        padding-left: 0;
+    }
+}

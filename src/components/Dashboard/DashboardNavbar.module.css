@@ -1,0 +1,107 @@
+.navbar_container {
+    box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.45);
+    padding: 18px 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamburger_btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: transparent;
+    color: #1C2556;
+    font-size: 30px;
+    border: none;
+}
+
+.navbar_logo img {
+    width: 200px;
+    height: auto;
+    scale: 1.2;
+    display: none;
+}
+
+.profile_btn {
+    font-size: 20px;
+    background-color: #1C2556;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.action_section .admin_dropdown_content {
+    display: block;
+}
+
+.admin_dropdown_content {
+    display: none;
+    position: absolute;
+    min-width: 110px;
+    right: 25px;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 8px 16px 0 #0003; */
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, .4));
+    padding: 8px;
+    text-decoration: none;
+    /* z-index: 2; */
+    list-style-type: none;
+    cursor: pointer !important;
+}
+
+.admin_dropdown_content::before {
+    border: 10px solid;
+    border-color: #0000 #0000 #fff;
+    content: "";
+    left: 78%;
+    position: absolute;
+    top: -14%;
+    transform: translate(-90%, -50%);
+}
+
+.admin_dropdown_content a {
+    text-decoration: none;
+    color: black;
+}
+
+.admin_dropdown_content li {
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px 5px;
+    list-style: none;
+}
+
+.admin_dropdown_content a li:hover {
+    background-color: #f4f1f1;
+}
+
+@media(max-width: 768px) {
+    .hamburger_btn {
+        display: block;
+    }
+
+    .navbar_container {
+        justify-content: space-between;
+    }
+    
+    .navbar_logo img {
+        display: block;
+    }
+}
