@@ -20,7 +20,9 @@ const Sidebar = ( { isOpen, closeSidebar }) => {
                     <div className={styles.navbar_logo}>
                         <img src={navbarLogo} alt="" />
                     </div>
-                    {dashboardRoutes.map(({ path, name }) => (
+                    {dashboardRoutes
+                    .filter(route => route.showInSidebar)
+                    .map(({ path, name }) => (
                         <div className={styles.sidebar_option_wrapper} key={path} onClick={() => navigate(`/${path}`)}>
                             <p>{name}</p>
                         </div>
