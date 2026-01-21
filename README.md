@@ -1,3 +1,5 @@
+# Contract Management Application
+
 A brief description of what this project does and who it's for
 
 🚀 Live Demo (Hosted on Netlify)
