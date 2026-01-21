@@ -8,7 +8,7 @@ A brief description of what this project does and who it's for
 
 This link is deployed via Netlify and showcases your current frontend implementation of the Contract Management Application.
 
-💡 Project Overview
+### 💡 Project Overview
 
 This is a frontend-only Contract Management Application built using React with Vite as the build tool.
 
@@ -78,16 +78,16 @@ Clone the repository
 git clone <your-repo-url> cd <your-project-folder>
 
 Install dependencies
-npm install
+#### npm install
 
 or
-yarn install
+#### yarn install
 
-Run the development server
-npm run dev
+### Run the development server
+#### npm run dev
 
 or
-yarn dev
+##### yarn dev
 
 You will see a local development server start — typically:
 
