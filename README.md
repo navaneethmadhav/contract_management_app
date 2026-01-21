@@ -1,16 +1,94 @@
-# React + Vite
+A brief description of what this project does and who it's for
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Live Demo (Hosted on Netlify)
 
-Currently, two official plugins are available:
+👉 Try the working version here: 🔗 https://contract-manager-cm.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This link is deployed via Netlify and showcases your current frontend implementation of the Contract Management Application.
 
-## React Compiler
+💡 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is a frontend-only Contract Management Application built using React with Vite as the build tool.
 
-## Expanding the ESLint configuration
+The goal of this project is to provide an intuitive UI where users can:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✔ Create Blueprints (contract templates) ✔ View a list of existing Blueprints ✔ Use Blueprints to create Contracts ✔ Navigate the application with a clear dashboard UI ✔ Track the basic contract workflow (in progress)
+
+📌 The Contract detail editing (entering contract values) is under development and not fully implemented yet.
+
+🛠 Features Implemented 🧾 Blueprint Management
+
+Create Blueprint page
+
+Add fields like Text, Date, Checkbox, Signature to a template
+
+Place fields on a canvas
+
+Edit field properties such as label and position
+
+Edit Blueprint page
+
+Load existing blueprint details
+
+Update field labels or add/remove fields
+
+Blueprint List page
+
+Shows all created blueprints
+
+Allows jumping into edit mode
+
+🧭 Navigation & Layout
+
+A sidebar with links to:
+
+Dashboard
+
+Blueprints
+
+Contracts
+
+A Dashboard page showing summary and links
+
+A Contracts list page that shows all created contracts
+
+📄 Contract Creation
+
+A form to create a Contract by selecting:
+
+A name
+
+An existing Blueprint
+
+Contract details are then generated based on the Blueprint
+
+🧩 What’s Not Completed Yet
+
+✔ Contract editing (filling in contract field values) ✔ Full contract lifecycle (approve, send, sign, lock) ✔ Backend integration (no API/data persistence beyond local state)
+
+These features are planned but not yet implemented, and therefore are not mentioned as completed features.
+
+🧪 How to Run the Project Locally
+
+Make sure you have Node.js and npm or Yarn installed.
+
+Clone the repository
+git clone <your-repo-url> cd <your-project-folder>
+
+Install dependencies
+npm install
+
+or
+yarn install
+
+Run the development server
+npm run dev
+
+or
+yarn dev
+
+You will see a local development server start — typically:
+
+http://localhost:5173/
+
+Open that in your browser to explore the application.
